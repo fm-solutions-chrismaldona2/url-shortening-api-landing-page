@@ -1,0 +1,20 @@
+.button {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--aqua-blue);
+  border: none;
+  padding: 0.85rem 2rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: transform 0.35s ease, background-color 0.35s ease;
+}
+
+.button:hover {
+  background-color: var(--light-aqua-blue);
+}
+
+.button:active {
+  transform: scale(0.95);
+}

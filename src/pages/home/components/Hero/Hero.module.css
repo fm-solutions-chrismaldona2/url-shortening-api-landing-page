@@ -1,0 +1,22 @@
+.hero {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.hero__title {
+  line-height: 1.15;
+  font-family: inherit;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--purplish-black);
+}
+
+.hero__description {
+  line-height: 1.5;
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--gray);
+}
