@@ -1,4 +1,6 @@
-export default function Logo({ fill = "#34313d", ...props }) {
+import PropTypes from "prop-types";
+
+export const Logo = ({ fill = "#34313d", ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -13,4 +15,10 @@ export default function Logo({ fill = "#34313d", ...props }) {
       />
     </svg>
   );
-}
+};
+
+Logo.propTypes = {
+  fill: PropTypes.string,
+};
+
+export default Logo;

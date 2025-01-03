@@ -13,8 +13,8 @@ export default function Hero() {
         </p>
         <Button onClick={() => {}}>Get Started</Button>
       </div>
-      <div>
-        <WorkingIllustration />
+      <div className={styles["hero__illustration-container"]}>
+        <WorkingIllustration className={styles.hero__illustration} />
       </div>
     </section>
   );
