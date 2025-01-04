@@ -34,7 +34,7 @@ body {
 }
 
 ::selection {
-  background-color: #2bd1d125;
+  background-color: #a189e448;
 }
 
 *,
@@ -49,6 +49,7 @@ body {
 
 html {
   background-color: var(--light-gray);
+  scroll-behavior: smooth;
 }
 
 body {

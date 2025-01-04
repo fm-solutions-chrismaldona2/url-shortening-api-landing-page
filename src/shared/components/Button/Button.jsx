@@ -1,17 +1,22 @@
 import styles from "./Button.module.css";
 import PropTypes from "prop-types";
-import { concatClassNames as cn } from "@/shared/helpers/concatClassNames";
+
+const sizes = {
+  small: "small",
+  medium: "medium",
+  large: "large",
+};
 
 const Button = ({
   onClick,
-  className,
   children,
   type = "button",
+  size = sizes.medium,
   ...props
 }) => {
   return (
     <button
-      className={cn(styles.button, className)}
+      className={`${styles.button} ${styles[`button--${size}`]}`}
       onClick={onClick}
       type={type}
       {...props}
@@ -23,8 +28,8 @@ const Button = ({
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
-  className: PropTypes.string,
   type: PropTypes.string,
+  size: PropTypes.oneOf(Object.values(sizes)),
   children: PropTypes.node.isRequired,
 };
 

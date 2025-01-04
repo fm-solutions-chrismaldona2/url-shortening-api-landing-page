@@ -8,10 +8,18 @@ const linkVariants = {
   secondary: "secondary",
 };
 
-const Link = ({ variant = linkVariants.default, className, children }) => {
+const Link = ({
+  href,
+  variant = linkVariants.default,
+  target,
+  className,
+  children,
+}) => {
   return (
     <a
       className={cn(`${styles.link} ${styles[`link--${variant}`]}`, className)}
+      href={href}
+      target={target}
     >
       {children}
     </a>
@@ -21,7 +29,9 @@ const Link = ({ variant = linkVariants.default, className, children }) => {
 export default Link;
 
 Link.propTypes = {
+  href: PropTypes.string.isRequired,
   variant: PropTypes.oneOf(Object.values(linkVariants)),
+  target: PropTypes.string,
   className: PropTypes.string,
   children: PropTypes.node.isRequired,
 };

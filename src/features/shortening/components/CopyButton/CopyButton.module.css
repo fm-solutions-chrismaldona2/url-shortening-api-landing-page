@@ -1,0 +1,34 @@
+.button {
+  width: 110px;
+  font-family: inherit;
+  font-weight: 700;
+  color: var(--white);
+  background-color: var(--aqua-blue);
+  border: none;
+  cursor: pointer;
+
+  flex-shrink: 0;
+  padding-block: 0.75rem;
+  font-size: clamp(0.85rem, 2vw, 1rem);
+  border-radius: 0.35rem;
+
+  white-space: nowrap;
+  overflow: hidden;
+  transition: transform 0.35s ease, background-color 0.25s ease;
+}
+
+.button:hover {
+  background-color: var(--light-aqua-blue);
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button--copied {
+  background-color: var(--dark-purple);
+}
+
+.button--copied:hover {
+  background-color: var(--purple);
+}

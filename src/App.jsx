@@ -5,6 +5,7 @@ import MainLayout from "@/shared/layouts/MainLayout/MainLayout";
 import NavBar from "@/shared/components/Navbar/NavBar";
 import HomePage from "@/pages/home/HomePage";
 import Footer from "@/shared/components/Footer/Footer";
+import BoostLinksSection from "@/shared/components/BoostLinksSection/BoostLinksSection";
 
 export const App = () => {
   return (
@@ -15,7 +16,10 @@ export const App = () => {
           <Route path="/" element={<HomePage />} />
         </Routes>
       </Router>
-      <Footer />
+      <div>
+        <BoostLinksSection />
+        <Footer />
+      </div>
     </MainLayout>
   );
 };
