@@ -1,4 +1,5 @@
 .nav {
+  background-color: var(--white);
   padding-inline: var(--inline-padding);
   padding-block: max(4vw, 2.5rem) 2rem;
   display: flex;
@@ -9,7 +10,7 @@
 
 .nav__logo {
   flex-shrink: 0;
-  height: clamp(2rem, 5vw, 2.5rem);
+  height: clamp(2rem, 3vw, 2.5rem);
   width: auto;
 }
 

@@ -1,0 +1,26 @@
+.section {
+  background-color: var(--light-gray);
+  padding-block: max(6vw, 3rem);
+}
+
+.section__header {
+  font-family: inherit;
+  text-align: center;
+}
+
+.section__title {
+  line-height: 1.15;
+  font-size: clamp(1.85rem, 3vw, 2.55rem);
+  font-weight: 700;
+  color: var(--purplish-black);
+  margin-bottom: 1.25rem;
+}
+
+.section__description {
+  line-height: 150%;
+  width: min(100%, 575px);
+  margin-inline: auto;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 400;
+  color: var(--gray);
+}

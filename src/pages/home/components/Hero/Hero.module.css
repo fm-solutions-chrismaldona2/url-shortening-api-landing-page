@@ -1,5 +1,6 @@
 .hero {
-  margin-block: min(3vw, 3rem) 4rem;
+  background-color: var(--white);
+  padding-block: min(3vw, 3rem) 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;

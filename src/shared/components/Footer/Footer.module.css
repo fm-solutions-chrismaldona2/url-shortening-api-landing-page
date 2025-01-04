@@ -1,0 +1,16 @@
+.footer {
+  background-color: var(--darker-purple);
+  color: var(--white);
+  padding-inline: var(--inline-padding);
+  padding-block: 4rem;
+}
+
+.footer__logo {
+  flex-shrink: 0;
+  height: clamp(2rem, 3vw, 2.5rem);
+  width: auto;
+}
+
+.footer__logo path {
+  fill: var(--white);
+}

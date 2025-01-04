@@ -3,6 +3,10 @@ import { BgShortenPattern } from "@/shared/components/BackgroundPatterns/Backgro
 import Button from "@/shared/components/Button/Button";
 
 const LinkShortenerForm = () => {
+  const handleShort = () => {
+    console.log("Shorten");
+  };
+
   return (
     <div className={styles.form__container}>
       <form className={styles.form}>
@@ -12,7 +16,7 @@ const LinkShortenerForm = () => {
           placeholder="Shorten a link here..."
         />
         <div>
-          <Button className={styles.form__button} type="button">
+          <Button className={styles.form__button} onClick={handleShort}>
             Shorten It!
           </Button>
         </div>
