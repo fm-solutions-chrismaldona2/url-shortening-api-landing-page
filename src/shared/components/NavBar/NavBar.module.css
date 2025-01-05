@@ -1,7 +1,7 @@
 .nav {
   width: 100%;
-  background-color: var(--white);
-  padding-inline: var(--inline-padding);
+  background-color: var(--clr-white);
+  padding-inline: var(--body-inline-padding);
   padding-block: max(3.5vw, 2.5rem) 2.5rem;
   display: flex;
   align-items: center;
@@ -30,7 +30,7 @@
 }
 
 .nav__logo path {
-  fill: var(--purplish-black);
+  fill: var(--clr-purple-1000);
 }
 
 .nav__button {

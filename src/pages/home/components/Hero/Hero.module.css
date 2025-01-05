@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--white);
+  background-color: var(--clr-white);
   padding-block: min(3vw, 3rem) 4rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -14,7 +14,7 @@
   font-family: inherit;
   font-size: clamp(2.5rem, 5vw, 5.5rem);
   font-weight: 800;
-  color: var(--purplish-black);
+  color: var(--clr-purple-1000);
 }
 
 .hero__description {
@@ -22,7 +22,7 @@
   font-family: inherit;
   font-size: clamp(0.95rem, 2vw, 1.5rem);
   font-weight: 400;
-  color: var(--gray);
+  color: var(--clr-gray-600);
   margin-bottom: 2rem;
 }
 

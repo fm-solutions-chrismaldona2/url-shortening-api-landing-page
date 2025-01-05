@@ -2,13 +2,13 @@
   position: relative;
   display: grid;
   place-items: center;
-  background-color: var(--dark-purple);
+  background-color: var(--clr-purple-900);
   padding-block: 3rem;
   isolation: isolate;
 }
 
 .section__title {
-  color: var(--white);
+  color: var(--clr-white);
   font-size: clamp(1.5rem, 5vw, 2.25rem);
   margin-bottom: 1.5rem;
 }

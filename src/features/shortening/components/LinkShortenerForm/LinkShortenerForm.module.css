@@ -1,7 +1,7 @@
 .form__container {
   padding-block: clamp(1.5rem, 3.5vw, 3.25rem);
   padding-inline: clamp(1.5rem, 4vw, 3.75rem);
-  background-color: var(--dark-purple);
+  background-color: var(--clr-purple-900);
   border-radius: 0.75rem;
   position: relative;
   overflow: hidden;
@@ -30,7 +30,7 @@
 }
 
 .form__input::placeholder {
-  color: var(--gray);
+  color: var(--clr-gray-600);
 }
 
 .form__background {

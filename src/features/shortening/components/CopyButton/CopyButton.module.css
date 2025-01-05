@@ -2,8 +2,8 @@
   width: 110px;
   font-family: inherit;
   font-weight: 700;
-  color: var(--white);
-  background-color: var(--aqua-blue);
+  color: var(--clr-white);
+  background-color: var(--clr-aqua-blue-500);
   border: none;
   cursor: pointer;
 
@@ -18,7 +18,7 @@
 }
 
 .button:hover {
-  background-color: var(--light-aqua-blue);
+  background-color: var(--clr-aqua-blue-250);
 }
 
 .button:active {
@@ -26,9 +26,9 @@
 }
 
 .button--copied {
-  background-color: var(--dark-purple);
+  background-color: var(--clr-purple-900);
 }
 
 .button--copied:hover {
-  background-color: var(--purple);
+  background-color: var(--clr-purple-800);
 }

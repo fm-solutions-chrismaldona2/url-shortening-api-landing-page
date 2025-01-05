@@ -1,7 +1,7 @@
-import styles from "./MainLayout.module.css";
+import styles from "./GeneralLayout.module.css";
 import PropTypes from "prop-types";
 
-const MainLayout = ({ children }) => {
+const GeneralLayout = ({ children }) => {
   const [header, body, footer] = children;
   return (
     <div className={styles.layout}>
@@ -12,8 +12,8 @@ const MainLayout = ({ children }) => {
   );
 };
 
-MainLayout.propTypes = {
+GeneralLayout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default MainLayout;
+export default GeneralLayout;

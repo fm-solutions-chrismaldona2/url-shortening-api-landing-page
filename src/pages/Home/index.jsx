@@ -3,7 +3,7 @@ import StatisticSection from "./components/StatisticSection/StatisticSection";
 import HomePageLayout from "./layouts/HomePageLayout";
 import LinkShortener from "@/features/shortening/LinkShortener";
 
-export default function Home() {
+const Home = () => {
   return (
     <HomePageLayout>
       <Hero />
@@ -11,4 +11,5 @@ export default function Home() {
       <StatisticSection />
     </HomePageLayout>
   );
-}
+};
+export default Home;

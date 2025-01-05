@@ -32,7 +32,6 @@ const PreviousLink = ({ data }) => {
     </li>
   );
 };
-
 PreviousLink.propTypes = {
   data: PropTypes.shape({
     originalLink: PropTypes.string,

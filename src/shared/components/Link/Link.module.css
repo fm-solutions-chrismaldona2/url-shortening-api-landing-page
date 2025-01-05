@@ -1,7 +1,7 @@
 .link {
   font-family: inherit;
   text-decoration: none;
-  color: var(--purplish-black);
+  color: var(--clr-purple-1000);
   cursor: pointer;
   transition: color 0.35s ease;
 }
@@ -9,11 +9,11 @@
 .link--default {
   font-size: clamp(0.95rem, 2vw, 1.05rem);
   font-weight: 600;
-  color: var(--gray);
+  color: var(--clr-gray-600);
 }
 
 .link--default:hover {
-  color: var(--purplish-black);
+  color: var(--clr-purple-1000);
 }
 
 .link--primary {
@@ -27,4 +27,12 @@
 }
 
 .link--secondary {
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
+  font-weight: 400;
+  color: var(--clr-gray-500);
+  transition: color 0.35s ease;
+}
+
+.link--secondary:hover {
+  color: var(--clr-aqua-blue-500);
 }

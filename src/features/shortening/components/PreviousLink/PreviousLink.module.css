@@ -1,6 +1,6 @@
 .link__container {
   display: flex;
-  background-color: var(--white);
+  background-color: var(--clr-white);
   justify-content: space-between;
   gap: 1rem;
   padding-block: clamp(1.25rem, 2vw, 1.5rem) 1.5rem;
@@ -36,11 +36,11 @@
 }
 
 .link--original {
-  color: var(--purplish-black);
+  color: var(--clr-purple-1000);
 }
 
 .link--short {
-  color: var(--aqua-blue);
+  color: var(--clr-aqua-blue-500);
 }
 
 @media screen and (max-width: 768px) {
