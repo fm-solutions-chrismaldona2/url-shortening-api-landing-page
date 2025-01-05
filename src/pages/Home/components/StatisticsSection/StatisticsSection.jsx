@@ -1,4 +1,4 @@
-import styles from "./StatisticSection.module.css";
+import styles from "./StatisticsSection.module.css";
 import PropTypes from "prop-types";
 import {
   FullyCustomizableIcon,
@@ -30,7 +30,7 @@ const data = [
   },
 ];
 
-const StatisticSection = () => {
+const StatisticsSection = () => {
   return (
     <section className={styles.section}>
       <div className={styles.section__header}>
@@ -49,7 +49,7 @@ const StatisticSection = () => {
   );
 };
 
-export default StatisticSection;
+export default StatisticsSection;
 
 const StatisticItem = ({ data }) => {
   const { icon: Icon, title, description } = data;

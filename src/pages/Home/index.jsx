@@ -1,5 +1,5 @@
 import Hero from "./components/Hero/Hero";
-import StatisticSection from "./components/StatisticSection/StatisticSection";
+import StatisticsSection from "./components/StatisticsSection/StatisticsSection";
 import HomePageLayout from "./layouts/HomePageLayout";
 import LinkShortener from "@/features/shortening/LinkShortener";
 
@@ -8,7 +8,7 @@ const Home = () => {
     <HomePageLayout>
       <Hero />
       <LinkShortener />
-      <StatisticSection />
+      <StatisticsSection />
     </HomePageLayout>
   );
 };

@@ -79,6 +79,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: start;
+    gap: 3rem;
   }
 
   .footer__left {
