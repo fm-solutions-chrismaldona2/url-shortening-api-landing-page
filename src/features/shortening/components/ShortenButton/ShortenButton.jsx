@@ -1,8 +1,14 @@
 import styles from "./ShortenButton.module.css";
 
-const ShortenButton = () => {
+const ShortenButton = (props) => {
   return (
-    <button className={styles.button} type="button">
+    <button
+      className={styles.button}
+      type="button"
+      aria-label="Shorten link"
+      title="Shorten link"
+      {...props}
+    >
       Shorten It!
     </button>
   );

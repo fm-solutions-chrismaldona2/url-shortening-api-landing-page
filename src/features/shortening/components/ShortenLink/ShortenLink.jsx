@@ -1,10 +1,10 @@
-import styles from "./PreviousLink.module.css";
+import styles from "./ShortenLink.module.css";
 import PropTypes from "prop-types";
 import Link from "@/shared/components/Link/Link";
 import CopyButton from "../CopyButton/CopyButton";
 
-const PreviousLink = ({ data }) => {
-  const { originalLink, shortLink } = data;
+const ShortenLink = ({ data }) => {
+  const { originalLink, shortedLink } = data;
 
   return (
     <li className={styles.link__container}>
@@ -20,22 +20,22 @@ const PreviousLink = ({ data }) => {
       </div>
       <div className={styles["link__container--right"]}>
         <Link
-          href={shortLink}
+          href={shortedLink}
           variant="primary"
           className={styles["link--short"]}
           target="_blank"
         >
-          {shortLink}
+          {shortedLink}
         </Link>
-        <CopyButton text={shortLink} />
+        <CopyButton text={shortedLink} />
       </div>
     </li>
   );
 };
-PreviousLink.propTypes = {
+ShortenLink.propTypes = {
   data: PropTypes.shape({
     originalLink: PropTypes.string,
-    shortLink: PropTypes.string,
+    shortedLink: PropTypes.string,
   }).isRequired,
 };
-export default PreviousLink;
+export default ShortenLink;
