@@ -60,6 +60,8 @@ const StatisticsSection = () => {
           delay: 0.2,
           type: "spring",
           duration: 0.5,
+          bounce: 0.6,
+          stiffness: 300,
         }}
       >
         {data.map((item) => {

@@ -10,6 +10,7 @@ const defaultErrorMessage =
 export const ShortenerProvider = ({ children }) => {
   const { getItem, setItem } = useLocalStorage("links");
   const [shortenedLinks, setShortenedLinks] = useState(getItem() || []);
+  const [isLoading, setIsLoading] = useState(false);
   const [apiError, setApiError] = useState("");
 
   useEffect(() => {
@@ -18,6 +19,7 @@ export const ShortenerProvider = ({ children }) => {
 
   const shortenLink = async (link) => {
     try {
+      setIsLoading(true);
       const res = await fetch(API_BASE_URL, {
         method: "POST",
         headers: {
@@ -50,6 +52,8 @@ export const ShortenerProvider = ({ children }) => {
     } catch (error) {
       console.error(error);
       setApiError(defaultErrorMessage);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -67,6 +71,7 @@ export const ShortenerProvider = ({ children }) => {
         deleteLink,
         shortenLink,
         apiError,
+        isLoading,
       }}
     >
       {children}

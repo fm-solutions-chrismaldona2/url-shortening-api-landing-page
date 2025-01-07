@@ -22,11 +22,13 @@ const ShortenedLinkList = () => {
           onReorder={handleReorder}
           ref={container}
         >
-          {shortenedLinks.map((data) => {
-            return (
-              <ShortenLink key={data.id} data={data} container={container} />
-            );
-          })}
+          <AnimatePresence>
+            {shortenedLinks.map((data) => {
+              return (
+                <ShortenLink key={data.id} data={data} container={container} />
+              );
+            })}
+          </AnimatePresence>
         </Reorder.Group>
       )}
     </AnimatePresence>

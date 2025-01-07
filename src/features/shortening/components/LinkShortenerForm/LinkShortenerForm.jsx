@@ -26,7 +26,7 @@ const LinkShortenerForm = () => {
     formState: { errors },
   } = useForm({ mode: "onTouched" });
 
-  const { shortenLink, apiError } = useShortener();
+  const { shortenLink, isLoading, apiError } = useShortener();
 
   const showNotification = useNotificationTimer(apiError);
 
@@ -71,7 +71,7 @@ const LinkShortenerForm = () => {
           </div>
 
           <div>
-            <ShortenButton type="submit" />
+            <ShortenButton type="submit" disabled={isLoading} />
           </div>
         </form>
         <BgShortenPattern className={styles.form__background} />
