@@ -3,7 +3,7 @@ import useNotificationTimer from "@/shared/hooks/useNotificationTimer";
 import { BgShortenPattern } from "@/shared/components/BackgroundPatterns/BackgroundPatterns";
 import ShortenButton from "../ShortenButton/ShortenButton";
 import { useForm } from "react-hook-form";
-import { validateUrl } from "@/shared/helpers/validateURL";
+import { validateUrl } from "../../helpers/validateUrl";
 import { useShortener } from "../../hooks/useShortener";
 import { motion, AnimatePresence } from "motion/react";
 import NotificationBanner from "@/shared/components/NotificationBanner/NotificationBanner";
