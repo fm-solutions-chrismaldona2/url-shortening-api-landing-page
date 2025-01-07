@@ -13,25 +13,23 @@ const ShortenedLinkList = () => {
   };
 
   return (
-    <AnimatePresence>
-      {shortenedLinks.length > 0 && (
-        <Reorder.Group
-          className={styles.list}
-          axis="y"
-          values={shortenedLinks}
-          onReorder={handleReorder}
-          ref={container}
-        >
-          <AnimatePresence>
-            {shortenedLinks.map((data) => {
-              return (
-                <ShortenLink key={data.id} data={data} container={container} />
-              );
-            })}
-          </AnimatePresence>
-        </Reorder.Group>
-      )}
-    </AnimatePresence>
+    <Reorder.Group
+      className={styles.list}
+      axis="y"
+      values={shortenedLinks}
+      onReorder={handleReorder}
+      ref={container}
+      initial={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      <AnimatePresence>
+        {shortenedLinks.map((data) => {
+          return (
+            <ShortenLink key={data.id} data={data} container={container} />
+          );
+        })}
+      </AnimatePresence>
+    </Reorder.Group>
   );
 };
 
