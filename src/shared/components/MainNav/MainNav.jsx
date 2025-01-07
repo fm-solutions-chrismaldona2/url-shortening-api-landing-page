@@ -1,4 +1,4 @@
-import styles from "./Navbar.module.css";
+import styles from "./MainNav.module.css";
 import Logo from "@/shared/components/Logo/Logo";
 import Link from "@/shared/components/Link/Link";
 import Button from "@/shared/components/Button/Button";
@@ -6,7 +6,7 @@ import { MenuIcon } from "@/shared/components/Icons/CustomIcons";
 import { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 
-const Navbar = () => {
+const MainNav = () => {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const openMenu = () => {
     setIsMenuVisible((prev) => !prev);
@@ -56,7 +56,7 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MainNav;
 
 const MobileMenu = () => {
   return (
