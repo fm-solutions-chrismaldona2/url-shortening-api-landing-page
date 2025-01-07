@@ -9,6 +9,7 @@ import { useShortener } from "../../hooks/useShortener";
 const ShortenLink = ({ data, container }) => {
   const { id, longLink, shortLink } = data;
   const { deleteLink } = useShortener();
+
   const handleDelete = () => {
     deleteLink(id);
   };

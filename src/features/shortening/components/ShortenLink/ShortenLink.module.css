@@ -68,7 +68,7 @@
 }
 
 .link--short {
-  color: var(--clr-aqua-blue-500);
+  color: var(--clr-aqua-blue-500) !important;
 }
 
 @media screen and (max-width: 768px) {

@@ -16,7 +16,7 @@ const Link = ({
 }) => {
   return (
     <a
-      className={`${styles.link} ${styles[`link--${variant}`]} ${className}`}
+      className={` ${styles.link} ${styles[`link--${variant}`]} ${className}`}
       href={href}
       target={target}
     >
