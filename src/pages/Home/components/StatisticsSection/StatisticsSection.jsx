@@ -5,6 +5,7 @@ import {
   BrandRecognitionIcon,
   DetailedRecordsIcon,
 } from "@/shared/components/Icons/CustomIcons";
+import { motion } from "motion/react";
 
 const data = [
   {
@@ -30,6 +31,15 @@ const data = [
   },
 ];
 
+const animationVariants = {
+  hidden: {
+    scale: 0.85,
+  },
+  visible: {
+    scale: 1,
+  },
+};
+
 const StatisticsSection = () => {
   return (
     <section className={styles.section}>
@@ -40,11 +50,22 @@ const StatisticsSection = () => {
           statistics dashboard.
         </p>
       </div>
-      <div className={styles["section__items"]}>
+      <motion.div
+        className={styles["section__items"]}
+        variants={animationVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{
+          delay: 0.2,
+          type: "spring",
+          duration: 0.5,
+        }}
+      >
         {data.map((item) => {
           return <StatisticItem data={item} key={item.id} />;
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };

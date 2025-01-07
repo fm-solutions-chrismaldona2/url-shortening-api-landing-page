@@ -10,9 +10,11 @@ const BoostLinksSection = () => {
   return (
     <section className={styles.section}>
       <h2 className={styles.section__title}>Boost your links today</h2>
+
       <Button size="large" onClick={handleBoost}>
         Get started
       </Button>
+
       <BgBoostPattern className={styles.section__background} />
     </section>
   );

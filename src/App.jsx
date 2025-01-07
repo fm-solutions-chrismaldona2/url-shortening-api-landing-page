@@ -8,14 +8,16 @@ import BoostLinksSection from "@/shared/components/BoostLinksSection/BoostLinksS
 
 export const App = () => {
   return (
-    <GeneralLayout>
-      <NavBar />
-      <HomePage />
-      <div>
-        <BoostLinksSection />
-        <Footer />
-      </div>
-    </GeneralLayout>
+    <>
+      <GeneralLayout>
+        <NavBar />
+        <HomePage />
+        <div>
+          <BoostLinksSection />
+          <Footer />
+        </div>
+      </GeneralLayout>
+    </>
   );
 };
 
