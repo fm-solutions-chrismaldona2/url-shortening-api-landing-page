@@ -23,6 +23,6 @@ During the development of this app, the API originally provided in the challenge
 
 <div class="grid cards" markdown>
   <img src="/desktop-preview.jpg" width="100%">
-  <img src="/mobile-preview.jpg" width="50%">
-  <img src="/mobile-preview-2.jpg" width="50%">
+  <img src="/mobile-preview.jpg" width="49%">
+  <img src="/mobile-preview-2.jpg" width="49%">
 </div>
