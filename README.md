@@ -5,7 +5,7 @@ The app is the solution to the [URL Shortening API Landing Page challenge](https
 
 ## Live Site
 
-[Netlify Deploy]()
+[Netlify Deploy](https://urlshortening-landing.netlify.app)
 
 ## Important Update
 
