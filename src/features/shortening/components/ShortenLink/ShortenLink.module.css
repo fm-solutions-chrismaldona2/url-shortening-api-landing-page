@@ -2,11 +2,10 @@
   display: flex;
   background-color: var(--clr-white);
   justify-content: space-between;
-  gap: 1rem;
+  gap: max(5vw, 2rem);
   padding-block: clamp(1.25rem, 2vw, 1.5rem) 1.5rem;
   padding-inline: clamp(1rem, 3vw, 2.5rem);
   border-radius: 0.5rem;
-  max-width: 100%;
   cursor: grab;
   overflow: hidden;
   position: relative;
@@ -48,6 +47,10 @@
   align-items: center;
   flex-wrap: nowrap;
   min-width: 0;
+}
+
+.link__container--left {
+  flex: 1;
 }
 
 .link__container--right {
