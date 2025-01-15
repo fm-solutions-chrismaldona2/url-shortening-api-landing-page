@@ -1,37 +1,26 @@
 import styles from "./ShortenedLinksList.module.css";
 import { useShortener } from "../../hooks/useShortener";
+import { AnimatePresence, motion } from "motion/react";
 import ShortenLink from "../ShortenLink/ShortenLink";
-import { AnimatePresence, Reorder } from "motion/react";
-import { useRef } from "react";
 
 const ShortenedLinkList = () => {
-  const container = useRef(null);
-  const { shortenedLinks, setShortenedLinks } = useShortener();
-
-  const handleReorder = (newOrder) => {
-    setShortenedLinks(newOrder);
-  };
+  const { shortenedLinks } = useShortener();
 
   return (
     <AnimatePresence>
       {shortenedLinks.length > 0 && (
-        <Reorder.Group
+        <motion.ul
           className={styles.list}
-          axis="y"
           values={shortenedLinks}
-          onReorder={handleReorder}
-          ref={container}
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
           <AnimatePresence>
             {shortenedLinks.map((data) => {
-              return (
-                <ShortenLink key={data.id} data={data} container={container} />
-              );
+              return <ShortenLink key={data.id} data={data} />;
             })}
           </AnimatePresence>
-        </Reorder.Group>
+        </motion.ul>
       )}
     </AnimatePresence>
   );

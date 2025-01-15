@@ -2,11 +2,11 @@ import styles from "./ShortenLink.module.css";
 import PropTypes from "prop-types";
 import Link from "@/shared/components/Link/Link";
 import CopyButton from "../CopyButton/CopyButton";
-import { Reorder } from "motion/react";
+import { motion } from "motion/react";
 import { DeleteIcon } from "@/shared/components/Icons/CustomIcons";
 import { useShortener } from "../../hooks/useShortener";
 
-const ShortenLink = ({ data, container }) => {
+const ShortenLink = ({ data }) => {
   const { id, longLink, shortLink } = data;
   const { deleteLink } = useShortener();
 
@@ -15,11 +15,8 @@ const ShortenLink = ({ data, container }) => {
   };
 
   return (
-    <Reorder.Item
+    <motion.li
       value={data}
-      dragDirectionLock={true}
-      dragConstraints={container}
-      dragElastic={0.05}
       className={styles.link__container}
       initial={{ opacity: 0, scale: 0.98 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -51,7 +48,7 @@ const ShortenLink = ({ data, container }) => {
         </Link>
         <CopyButton text={shortLink} />
       </div>
-    </Reorder.Item>
+    </motion.li>
   );
 };
 ShortenLink.propTypes = {
@@ -60,6 +57,5 @@ ShortenLink.propTypes = {
     longLink: PropTypes.string,
     shortLink: PropTypes.string,
   }).isRequired,
-  container: PropTypes.shape({ current: PropTypes.any }),
 };
 export default ShortenLink;

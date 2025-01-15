@@ -6,7 +6,6 @@
   padding-block: clamp(1.25rem, 2vw, 1.5rem) 1.5rem;
   padding-inline: clamp(1rem, 3vw, 2.5rem);
   border-radius: 0.5rem;
-  cursor: grab;
   overflow: hidden;
   position: relative;
 }
